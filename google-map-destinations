@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script>
+    google.load('visualization', '1', { 'packages': ['map'] });
+    google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Destination', 'Description'],
+        ['Iguacu Falls, Brasil', 'Iguacu Falls, Brasil (2011)'],
+        ['Itaipu Dam, Brasil', 'Itaipu Dam, Brasil (2011)'],
+        ['Curitiba, Brasil', 'Curitiba, Brasil (2011)'],
+        ['PA, USA', 'Grew up in Pennsylvania'],
+        ['Stevens Institute of Technology, USA', 'Attending Stevens Tech'],
+        ['Bromley, UK', 'Bromley, UK (2013)'],
+        ['York, UK', 'York, UK (2013)'],
+        ['Amsterdam, NL', 'Amsterdam, NL (2013)'],
+        ['Berlin, DE', 'Berlin, DE (2013)'],
+        ['Levittown, PR', 'Levittown, PR (2012)'],
+	['Tucson, AZ, USA', 'Tucson, AZ (2013)'],
+	['Mt. Lemon, AZ, USA', 'Mt. Lemon, AZ (2012)']
+
+      ]);
+
+    var options = { showTip: true };
+
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+    map.draw(data, options);
+  };
+  </script>
+  </head>
+  <body>
+    <div id="chart_div" showLine="true" style="width: 500px"></div>
+  </body>
+</html>
