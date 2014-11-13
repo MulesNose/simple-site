@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://s3.amazonaws.com/iantyger.com/Packages/jquery-2.1.1.min.js"></script>
+<script src="app.js"></script>
+<script src="https://s3.amazonaws.com/iwt-web-pack-001/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://s3.amazonaws.com/iwt-web-pack-001/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="explore.css">
+<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/iantyger.com/Images/favicon+(3).ico">
+</head>
+
+	<title>Ian Tyger's Website</title>
+
+<body>
+
+<!-- ***TOP NAVIGATION BAR BEGINS HERE*** -->	
+<div class = "main">
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id = "home" class="navbar-brand fa fa-home" href="index.html"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="aboutme.html">About Me</a></li>
+        <li class = "active"><a href="explore.html">Explore</a></li>
+        <li class="dropdown">
+          <a href="professional.html" class="dropdown-toggle" data-toggle="">Professional <span class="caret"></span></a>
+          <ul class="dropdown-menu navbar-inverse" role="menu">
+
+	    <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="ambition.html">Ambition</a></li>
+            <li class="divider"></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li class="divider"></li>
+            <li><a href="sources.html">About this Site</a></li>
+
+          </ul>
+        </li>
+      </ul>
+
+<!-- -->
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="blog.html"><i class = "fa fa-comments-o"></i> Blog</a></li>
+        <li><a href="contact.html"><i class="fa fa-envelope-square"></i> Contact</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</div>
+
+<!-- ***CONTENT BEGINS HERE*** -->
+
+<h1><strong>
+	Explore
+</strong></h1>
+
+<!-- ***COLLAPSABLE MENU*** -->
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fa fa-caret-square-o-down"></i> Systems & Engineering
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul>
+	  <li><a href= "http://clexchange.org/aboutsd/jaywforrester.asp" target="_blank"><strong>Creative Learning Exchange</strong> - System Dynamics Pioneer: Jay W. Forrester</a></li>
+	  <li><a href= "http://www.donellameadows.org/systems-thinking-resources/" target="_blank"><strong>Donella Meadows Institute</strong> - Systems Thinking Resources</a></li>
+	  <li><a href= "http://web.mit.edu/sysdyn/papers-index.html" target="_blank" target="_blank"><strong>MIT</strong> - System Dynamics Index of Papers Online</a></li>
+	  <li><a href= "http://energy.gov/oe/services/technology-development/smart-grid/role-microgrids-helping-advance-nation-s-energy-system" target="_blank"><strong>Energy.gov</strong> - The Role of Microgrids ...</a></li>
+	  <li><a href= "http://www.schneiderelectric.pt/documents/solutions/solution/Eficiencia-Energetica/ee_white_paper_designing_metering_system.pdf" target="_blank"><strong>Schneider Electric</strong> - Designing a metering system ...</a></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <i class="fa fa-caret-square-o-down"></i> Computer Science
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <ul>
+	  <li><a href= "http://aws.amazon.com/" target="_blank"><strong>Amazon Web Services (AWS)</strong></a></li>
+	  <li><a href= "https://github.com/" target="_blank"><strong>GitHub</strong> - Collaborative code repositories</a></li>
+	  <li><a href= "https://www.docker.com/" target="_blank"><strong>Docker</strong> - Open platform for distributed applications...</a></li>
+	  <li><a href= "http://hadoop.apache.org/" target="_blank"><strong>Hadoop</strong> - Open-source software for paralleled computing</a></li>
+	  <li><a href= "http://www.codecademy.com/" target="_blank"><strong>Codecademy</strong> - Learn to code interactively, for free</a></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <i class="fa fa-caret-square-o-down"></i> Data Visualization
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <ul>
+	  <li><a href= "http://spotfire.tibco.com/" target="_blank"><strong>TIBCO Spotfire</strong></a></li>
+	  <li><a href= "http://www.r-project.org/" target="_blank"><strong>R Project</strong> - Statistical Computing</a></li>
+	  <li><a href= "https://sites.google.com/site/fusiontablestalks/stories" target="_blank"><strong>Google Drive</strong> - Fusion Tables</a></li>
+	  <li><a href= "http://yihui.name/knitr/" target="_blank"><strong>knitr</strong> - Dynamic Report Generation</a></li>
+	  <li><a href= "http://d3js.org/" target="_blank"><strong>D3</strong> - Data-Driven Documents</a></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <i class="fa fa-caret-square-o-down"></i> Data Mining
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        <ul>
+	  <li><a href= "http://rattle.togaware.com/RattleBrochure.pdf" target="_blank"><strong>Rattle</strong> - Data Mining using R</a></li>
+	  <li><a href= "https://rapidminer.com/industry/utilities/" target="_blank"><strong>RapidMiner</strong> - Data Mining, Machine Learning, and Predictive Analytics</a></li>
+	  <li><a href= "http://orange.biolab.si/" target="_blank"><strong>Orange Canvas</strong> - Data Mining, Fruitful and Fun</a></li>
+	  <li><a href= "http://www.togaware.com/" target="_blank"><strong>togaware</strong> - Open Source Solutions and Data Mining</a></li>
+	  <li><a href= "http://www.eia.gov/" target="_blank"><strong>EIA.gov</strong> - U.S. Energy Information Admin. (source of interest)</a></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <i class="fa fa-caret-square-o-down"></i> Literature
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        <ul>
+	  <li><a href= "http://www.amazon.com/Sustainable-Urban-Metabolism-Paulo-Ferr%C3%A3o/dp/0262019361" target="_blank"><strong>Sustainable Urban Metabolism</strong></a></li>
+	  <li><a href= "http://www.amazon.com/Beyond-Religion-Ethics-Whole-World/dp/054784428X" target="_blank"><strong>Beyond Religion: Ethics for a Whole World</strong></a></li>
+	  <li><a href= "http://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557" target="_blank"><strong>Thinking in Systems</strong</a></li>
+	  <li><a href= "#">More to Come...</a></li>
+	  <li><a href= "#">More to Come...</a></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ***FOOTER BEGINS HERE*** -->
+
+<div id = "footer" class = "row">
+	<div class = "col-xs-2">
+		<a href = "index.html">Home</a>
+	</div>
+
+	<div class = "col-xs-2">
+		<a href = "contact.html">Contact</a>
+	</div>
+
+	<div class = "col-xs-2">
+		<a href = "sources.html">Sources</a>
+	</div>
+
+	<div class = "col-xs-6">Created by Ian Tyger 11/7/2014</div>
+</div>
+
+</body>
+
+</html>
