@@ -1,0 +1,119 @@
+/* --NAVBAR-- */
+
+.main {
+	position: relative;
+}
+
+#home {
+	font-size: 56px;
+	margin: -13px 0px 0px 0px;
+	height: 100%;
+	padding: 5px;
+	left: 100px;
+	color: #808080;
+	text-shadow: 1px 2px 2px grey;
+
+}
+
+#home:hover {
+	color: white;
+}
+
+.navbar-default {
+	margin: 0px 10px 10px 10px;
+}
+
+.nav a {
+	font-family:  'Inconsolata', normal;
+	font-size: 28px;
+	padding: 0px 0px 0px 0px;
+}
+
+.navbar-default .navbar-collapse {
+	height:;
+}
+
+.navbar .container-fluid {
+	margin: 20px 0px 5px 0px;
+}
+
+.navbar-right{
+	padding: 0px 25px 0px 0px;
+	margin: -5px 0px 0px 0px;
+}
+
+.dropdown-menu li a{
+	color: white;
+	text shadow: 0px 0px 0px;
+}
+
+.dropdown:hover .dropdown-menu{
+        display: block; /* display the dropdown */
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+	
+}
+
+/* --CONTENT-- */
+
+
+h1 {
+	text-align: center;
+	padding: 10px;
+	font-family:'Inconsolata', normal;
+	border-bottom: 2px solid;
+	width: 100%;
+}
+
+h2{
+	font-size: 24px;
+	text-align: center;
+	padding: 10px;
+	font-family:'Inconsolata', normal;
+	border-bottom:;
+	width: 100%;
+}
+
+h3{
+	text-align: left;
+	padding: 10px;
+	font-family:'Inconsolata', normal;
+	width: 100%;
+	margin: auto;
+}
+
+.container {
+	margin: auto;
+	margin-top: 55px;
+	z-index: 1;
+}
+
+.container .row{
+	border-bottom: 1px solid black;
+}
+
+#rowcolor{
+	background-color: lightgrey;
+}
+
+/* --FOOTER-- */
+
+#footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin: 10px 0px 0px 32px;
+	font-size: 14px;
+	color: #777;
+	background-color: white;
+}
+
+#footer a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#footer .col-xs-6{
+	text-align: center;
+}
