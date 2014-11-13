@@ -1,0 +1,127 @@
+/* --NAVBAR-- */
+
+.main {
+	position: relative;
+}
+
+#home {
+	font-size: 56px;
+	margin: -13px 0px 0px 0px;
+	height: 100%;
+	padding: 5px;
+	left: 100px;
+	color: #808080;
+	text-shadow: 1px 2px 2px grey;
+
+}
+
+#home:hover {
+	color: white;
+}
+
+.navbar-default {
+	margin: 0px 10px 10px 10px;
+}
+
+.nav a {
+	font-family:  'Inconsolata', normal;
+	font-size: 28px;
+	padding: 0px 0px 0px 0px;
+}
+
+.navbar-default .navbar-collapse {
+	height:;
+}
+
+.navbar .container-fluid {
+	margin: 20px 0px 5px 0px;
+}
+
+.navbar-right{
+	padding: 0px 25px 0px 0px;
+	margin: -5px 0px 0px 0px;
+}
+
+.dropdown-menu li a{
+	color: white;
+	text shadow: 0px 0px 0px;
+}
+
+.dropdown:hover .dropdown-menu{
+        display: block; /* display the dropdown */
+}
+
+/* --CONTENT-- */
+
+.jumbotron {
+	background: url("https://s3.amazonaws.com/iantyger.com/Images/Newport+Skyline") no-repeat bottom center;
+	background-size: cover;
+	height: 550px;
+	width: 1200px;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron .container {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: ;
+	width: 100%;
+}
+
+.jumbotron h1 {
+	color: white;
+	font-size: 96px;
+	text-shadow:5px 5px 10px black;
+}
+
+.jumbotron p {
+	color: white;
+	font-size: 36px;
+	text-shadow:5px 5px 10px black;	
+}
+
+#front-top {
+	color: #777;
+	margin: auto;
+	margin-top: 15px;
+	width: 1200px;
+	text-align: center;
+	font-family: 'Inconsolata', normal;
+	font-size: 28px;
+	padding: 10px;
+}
+
+#front-mid {
+	margin: auto;
+	width: 1200px;
+	text-align: center;
+	font-size: 108px;
+	padding: 10px;
+	text-shadow: 1px 2px 3px grey, 2px 3px 4px silver, 3px 4px 5px black;
+}
+
+#front-mid i:hover {
+	color: #adadad;
+}
+
+/* --FOOTER-- */
+
+#footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin: 10px 0px 0px 32px;
+	font-size: 14px;
+	color: #777;
+	background-color: white;
+}
+
+#footer a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#footer .col-xs-6{
+	text-align: center;
+}
