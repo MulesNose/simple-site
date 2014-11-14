@@ -61,7 +61,7 @@ body{
 }
 
 #front-top {
-	color: ;
+	color: black;
 	margin: auto;
 	margin-top: 150px;
 	width: 100%;
@@ -69,7 +69,7 @@ body{
 	font-family: 'Inconsolata', normal;
 	font-size: 36px;
 	padding: 10px;
-	text-shadow: 1px 2px 3px white;
+	text-shadow: 1px 2px 3px silver;
 }
 
 #front-mid {
@@ -86,7 +86,7 @@ body{
 }
 
 #front-mid a {
-	color: #101010;
+	color: inherit;
 }
 
 /* --FOOTER-- */
@@ -115,4 +115,5 @@ body{
 
 #space {
 	height: 100px;
+	clear: both;
 }
