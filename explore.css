@@ -79,6 +79,10 @@ p{
 .panel-group {
 	font-family: 'Inconsolata', normal;
 	margin: 10px;
+	width: 45%;
+	border: 3px solid black;
+	box-shadow: 1px 2px 3px silver;
+	float: left;
 }
 
 .panel-group li a {
@@ -97,6 +101,33 @@ p{
 
 .panel-default>.panel-heading {
 	background-color: #222;
+}
+
+#chart_div {
+	float: right;
+	width: 45%;
+	margin: 10px;
+	height: 360px;
+	border: 3px solid black;
+	box-shadow: 1px 2px 3px silver;
+}
+
+#dataviz1 {
+	float: right;
+	width: 45%;
+	margin: 10px;
+	height: 360px;
+	border: 3px solid black;
+	box-shadow: 1px 2px 3px silver;	
+}
+
+#dataviz2 {
+	float: left;
+	width: 45%;
+	margin: 10px;
+	height: 360px;
+	border: 3px solid black;
+	box-shadow: 1px 2px 3px silver;	
 }
 
 /* --FOOTER-- */
@@ -118,4 +149,11 @@ p{
 
 #footer .col-xs-6{
 	text-align: center;
+}
+
+/* --UTILITY-- */
+
+#space {
+	height: 100px;
+	clear: both;
 }
