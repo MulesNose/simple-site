@@ -3,7 +3,7 @@
 
 <head>
 <script src="https://s3.amazonaws.com/iantyger.com/Packages/jquery-2.1.1.min.js"></script>
-<script src="app.js"></script>
+
 <script src="https://s3.amazonaws.com/iwt-web-pack-001/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://s3.amazonaws.com/iwt-web-pack-001/bootstrap.min.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -11,6 +11,34 @@
 <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="explore.css">
 <link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/iantyger.com/Images/favicon+(3).ico">
+
+<!--  **GOOGLE MAP W/ DESTINATIONS -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script>
+    google.load('visualization', '1', { 'packages': ['map'] });
+    google.setOnLoadCallback(drawMap);
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Destination', 'Description'],
+        ['Iguacu Falls, Brasil', 'Iguacu Falls, Brasil (2011)'],
+        ['Itaipu Dam, Brasil', 'Itaipu Dam, Brasil (2011)'],
+        ['Curitiba, Brasil', 'Curitiba, Brasil (2011)'],
+        ['PA, USA', 'Grew up in Pennsylvania'],
+        ['Stevens Institute of Technology, USA', 'Attending Stevens Tech'],
+        ['Bromley, UK', 'Bromley, UK (2013)'],
+        ['York, UK', 'York, UK (2013)'],
+        ['Amsterdam, NL', 'Amsterdam, NL (2013)'],
+        ['Berlin, DE', 'Berlin, DE (2013)'],
+        ['Levittown, PR', 'Levittown, PR (2012)'],
+	['Tucson, AZ, USA', 'Tucson, AZ (2013)'],
+	['Mt. Lemon, AZ, USA', 'Mt. Lemon, AZ (2012)']
+      ]);
+    var options = { showTip: true };
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+    map.draw(data, options);
+  };
+  </script>
+
 </head>
 
 	<title>Ian Tyger's Website</title>
@@ -86,9 +114,9 @@
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
         <ul>
-	  <li><a href= "http://clexchange.org/aboutsd/jaywforrester.asp" target="_blank"><strong>Creative Learning Exchange</strong> - System Dynamics Pioneer: Jay W. Forrester</a></li>
-	  <li><a href= "http://www.donellameadows.org/systems-thinking-resources/" target="_blank"><strong>Donella Meadows Institute</strong> - Systems Thinking Resources</a></li>
-	  <li><a href= "http://web.mit.edu/sysdyn/papers-index.html" target="_blank" target="_blank"><strong>MIT</strong> - System Dynamics Index of Papers Online</a></li>
+	  <li><a href= "http://clexchange.org/aboutsd/jaywforrester.asp"><strong>Creative Learning Exchange</strong> - System Dynamics Pioneer: Jay W. Forrester</a></li>
+	  <li><a href= "http://www.donellameadows.org/systems-thinking-resources/"><strong>Donella Meadows Institute</strong> - Systems Thinking Resources</a></li>
+	  <li><a href= "http://web.mit.edu/sysdyn/papers-index.html" target="_blank"><strong>MIT</strong> - System Dynamics Index of Papers Online</a></li>
 	  <li><a href= "http://energy.gov/oe/services/technology-development/smart-grid/role-microgrids-helping-advance-nation-s-energy-system" target="_blank"><strong>Energy.gov</strong> - The Role of Microgrids ...</a></li>
 	  <li><a href= "http://www.schneiderelectric.pt/documents/solutions/solution/Eficiencia-Energetica/ee_white_paper_designing_metering_system.pdf" target="_blank"><strong>Schneider Electric</strong> - Designing a metering system ...</a></li>
 	</ul>
@@ -166,16 +194,23 @@
     <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
       <div class="panel-body">
         <ul>
-	  <li><a href= "http://www.amazon.com/Sustainable-Urban-Metabolism-Paulo-Ferr%C3%A3o/dp/0262019361" target="_blank"><strong>Sustainable Urban Metabolism</strong></a></li>
-	  <li><a href= "http://www.amazon.com/Beyond-Religion-Ethics-Whole-World/dp/054784428X" target="_blank"><strong>Beyond Religion: Ethics for a Whole World</strong></a></li>
-	  <li><a href= "http://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557" target="_blank"><strong>Thinking in Systems</strong</a></li>
-	  <li><a href= "#">More to Come...</a></li>
-	  <li><a href= "#">More to Come...</a></li>
-	</ul>
+		  <li><a href= "http://www.amazon.com/Sustainable-Urban-Metabolism-Paulo-Ferr%C3%A3o/dp/0262019361" target="_blank"><strong>Sustainable Urban Metabolism</strong></a></li>
+		  <li><a href= "http://www.amazon.com/Beyond-Religion-Ethics-Whole-World/dp/054784428X" target="_blank"><strong>Beyond Religion: Ethics for a Whole World</strong></a></li>
+		  <li><a href= "http://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557" target="_blank"><strong>Thinking in Systems</strong></a></li>
+		  <li><a href= "#">More to Come...</a></li>
+		  <li><a href= "#">More to Come...</a></li>
+		</ul>
       </div>
     </div>
   </div>
 </div>
+
+<div id="chart_div"></div>
+<img id ="dataviz1" src="https://s3.amazonaws.com/iantyger.com/Images/Fallen%2BTree-compressed.jpg"/>
+<img id ="dataviz2" src="https://s3.amazonaws.com/iantyger.com/Images/Fallen%2BTree-compressed.jpg"/>
+
+
+<div id="space"></div>
 
 <!-- ***FOOTER BEGINS HERE*** -->
 
@@ -194,6 +229,8 @@
 
 	<div class = "col-xs-6">Created by Ian Tyger 11/7/2014</div>
 </div>
+
+<script src="app.js"></script>
 
 </body>
 
