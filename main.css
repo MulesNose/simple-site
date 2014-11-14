@@ -53,28 +53,48 @@
 
 /* --CONTENT-- */
 
-body{
+.jumbotron {
 	background: url("https://s3.amazonaws.com/iantyger.com/Images/Newport+Skyline") no-repeat bottom center;
 	background-size: cover;
-	height: 1024px;
+	height: 550px;
+	width: 1200px;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron .container {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: ;
 	width: 100%;
 }
 
+.jumbotron h1 {
+	color: white;
+	font-size: 96px;
+	text-shadow:5px 5px 10px black;
+}
+
+.jumbotron p {
+	color: white;
+	font-size: 36px;
+	text-shadow:5px 5px 10px black;	
+}
+
 #front-top {
-	color: black;
+	color: #777;
 	margin: auto;
-	margin-top: 150px;
-	width: 100%;
+	margin-top: 15px;
+	width: 1200px;
 	text-align: center;
 	font-family: 'Inconsolata', normal;
-	font-size: 36px;
+	font-size: 28px;
 	padding: 10px;
-	text-shadow: 1px 2px 3px silver;
 }
 
 #front-mid {
 	margin: auto;
-	width: 100%;
+	width: 1200px;
 	text-align: center;
 	font-size: 108px;
 	padding: 10px;
@@ -85,7 +105,7 @@ body{
 	color: #adadad;
 }
 
-#front-mid a {
+#front-mid a{
 	color: inherit;
 }
 
