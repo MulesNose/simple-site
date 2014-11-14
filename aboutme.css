@@ -121,7 +121,8 @@ h2{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
-	margin: 10px 0px 0px 32px;
+	margin: 10px 0px 0px 0px;
+	padding: 5px;
 	font-size: 14px;
 	color: #777;
 	background-color: white;
