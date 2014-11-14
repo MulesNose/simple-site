@@ -57,23 +57,24 @@ body{
 	background: url("https://s3.amazonaws.com/iantyger.com/Images/Newport+Skyline") no-repeat bottom center;
 	background-size: cover;
 	height: 1024px;
+	width: 100%;
 }
 
 #front-top {
 	color: ;
 	margin: auto;
 	margin-top: 150px;
-	width: 1200px;
+	width: 100%;
 	text-align: center;
 	font-family: 'Inconsolata', normal;
-	font-size: 32px;
+	font-size: 36px;
 	padding: 10px;
 	text-shadow: 1px 2px 3px white;
 }
 
 #front-mid {
 	margin: auto;
-	width: 1200px;
+	width: 100%;
 	text-align: center;
 	font-size: 108px;
 	padding: 10px;
@@ -82,6 +83,10 @@ body{
 
 #front-mid i:hover {
 	color: #adadad;
+}
+
+#front-mid a {
+	color: #101010;
 }
 
 /* --FOOTER-- */
@@ -104,4 +109,10 @@ body{
 
 #footer .col-xs-6{
 	text-align: center;
+}
+
+/* --UTILITY-- */
+
+#space {
+	height: 100px;
 }
