@@ -6,7 +6,7 @@
 
 #home {
 	font-size: 56px;
-	margin: -13px 0px 0px 0px;
+	margin: -13px 0px 0px 25px;
 	height: 100%;
 	padding: 5px;
 	left: 100px;
@@ -26,7 +26,7 @@
 .nav a {
 	font-family:  'Inconsolata', normal;
 	font-size: 28px;
-	padding: 0px 0px 0px 0px;
+	padding: 25px;
 }
 
 .navbar-default .navbar-collapse {
@@ -35,11 +35,12 @@
 
 .navbar .container-fluid {
 	margin: 20px 0px 5px 0px;
+	padding: 0px;
 }
 
 .navbar-right{
 	padding: 0px 25px 0px 0px;
-	margin: -5px 0px 0px 0px;
+	margin: -5px 0px 0px -15px;
 }
 
 .dropdown-menu li a{
@@ -51,13 +52,26 @@
         display: block; /* display the dropdown */
 }
 
+.navbar-inverse .navbar-nav>li>a {
+	margin: 0px 0px 0px 10px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	margin: 0px 0px 0px 14px;
+}
+
 /* --CONTENT-- */
+
+.container{
+	margin: auto;
+	width: 100%;
+}
 
 .jumbotron {
 	background: url("https://s3.amazonaws.com/iantyger.com/Images/Newport+Skyline") no-repeat bottom center;
 	background-size: cover;
 	height: 550px;
-	width: 1200px;
+	width: 100%;
 	margin: auto;
 	position: relative;
 	z-index: 1;
@@ -85,7 +99,7 @@
 	color: #777;
 	margin: auto;
 	margin-top: 15px;
-	width: 1200px;
+	width: 100%;
 	text-align: center;
 	font-family: 'Inconsolata', normal;
 	font-size: 28px;
@@ -94,7 +108,7 @@
 
 #front-mid {
 	margin: auto;
-	width: 1200px;
+	width: 100%;
 	text-align: center;
 	font-size: 108px;
 	padding: 10px;
@@ -134,6 +148,6 @@
 /* --UTILITY-- */
 
 #space {
-	height: 100px;
+	height: 150px;
 	clear: both;
 }
