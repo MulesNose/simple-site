@@ -2,11 +2,16 @@
 
 .main {
 	position: relative;
+	width: 98%;
+}
+
+.mobile{
+	display: none;
 }
 
 #home {
 	font-size: 56px;
-	margin: -13px 0px 0px 0px;
+	margin: -13px 0px 0px 25px;
 	height: 100%;
 	padding: 5px;
 	left: 100px;
@@ -21,12 +26,14 @@
 
 .navbar-default {
 	margin: 0px 10px 10px 10px;
+	width: 100%;
+	
 }
 
 .nav a {
 	font-family:  'Inconsolata', normal;
 	font-size: 28px;
-	padding: 0px 0px 0px 0px;
+	padding: 25px;
 }
 
 .navbar-default .navbar-collapse {
@@ -35,11 +42,12 @@
 
 .navbar .container-fluid {
 	margin: 20px 0px 5px 0px;
+	padding: 0px;
 }
 
 .navbar-right{
 	padding: 0px 25px 0px 0px;
-	margin: -5px 0px 0px 0px;
+	margin: -5px 0px 0px -15px;
 }
 
 .dropdown-menu li a{
@@ -51,12 +59,16 @@
         display: block; /* display the dropdown */
 }
 
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
-	
+.navbar-inverse .navbar-nav>li>a {
+	margin: 0px 0px 0px 10px;
+	line-height: 30px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	margin: 0px 0px 0px 14px;
 }
 
 /* --CONTENT-- */
-
 
 h1 {
 	text-align: center;
@@ -66,35 +78,29 @@ h1 {
 	width: 100%;
 }
 
-h2{
-	font-size: 24px;
-	text-align: center;
-	padding: 10px;
-	font-family:'Inconsolata', normal;
-	border-bottom:;
-	width: 100%;
-}
-
-h3{
+p{
 	text-align: left;
 	padding: 10px;
 	font-family:'Inconsolata', normal;
-	width: 100%;
+	border:;
+
+}
+
+.container{
 	margin: auto;
+	margin-top: 65px;
+	background-color: ;
+
 }
 
-.container {
-	margin: auto;
-	margin-top: 55px;
-	z-index: 1;
+.container a{
+	text-decoration: none;
+	color: #222;
+	text-shadow: 
 }
 
-.container .row{
-	border-bottom: 1px solid black;
-}
-
-#rowcolor{
-	background-color: lightgrey;
+.container a:hover {
+	color: blue;
 }
 
 /* --FOOTER-- */
@@ -124,4 +130,45 @@ h3{
 #space {
 	height: 100px;
 	clear: both;
+}
+
+/* --SCREEN ADJUST-- */
+
+@media (max-width: 825px), handheld and (orientation: portrait) {
+
+	html {
+		min-width: 575px;
+	}
+
+	.mobile {
+		position: relative;
+		width: 95%;
+		display: none;
+	}
+
+	.main {
+		display: inline-block;
+		position: relative;
+		width: 95%;
+	}
+
+	.navbar-inverse .navbar-brand{
+		text-align: center;
+	}
+
+	.nav>li {
+		display: inline-block;
+	}
+
+	.navbar-inverse .navbar-nav>li>a {
+		text-align: left;
+		font-size: 18px;
+		display: inline;
+	}
+	
+
+
+	.dropdown:hover .dropdown-menu{
+        	display: none;
+	}
 }
