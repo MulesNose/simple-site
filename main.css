@@ -2,6 +2,11 @@
 
 .main {
 	position: relative;
+	width: 98%;
+}
+
+.mobile{
+	display: none;
 }
 
 #home {
@@ -21,6 +26,8 @@
 
 .navbar-default {
 	margin: 0px 10px 10px 10px;
+	width: 100%;
+	
 }
 
 .nav a {
@@ -54,6 +61,7 @@
 
 .navbar-inverse .navbar-nav>li>a {
 	margin: 0px 0px 0px 10px;
+	line-height: 30px;
 }
 
 .navbar-nav>li>.dropdown-menu {
@@ -134,6 +142,7 @@
 	font-size: 14px;
 	color: #777;
 	background-color: white;
+	line-height: 30px;
 }
 
 #footer a{
@@ -150,4 +159,49 @@
 #space {
 	height: 150px;
 	clear: both;
+}
+
+
+/* --SCREEN ADJUST-- */
+
+@media (max-width: 825px), handheld and (orientation: portrait) {
+
+	html {
+		min-width: 500px;
+	}
+
+	.mobile {
+		position: relative;
+		width: 95%;
+		display: none;
+	}
+
+	.main {
+		display: inline-block;
+		position: relative;
+		width: 95%;
+	}
+
+	.navbar-header{
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		
+	}
+
+	.nav>li {
+		display: inline-block;
+	}
+
+	.navbar-inverse .navbar-nav>li>a {
+		text-align: left;
+		font-size: 18px;
+		display: inline;
+	}
+	
+
+
+	.dropdown:hover .dropdown-menu{
+        	display: none;
+	}
 }
