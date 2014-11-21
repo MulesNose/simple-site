@@ -1,112 +1,207 @@
-<!DOCTYPE html>
-<html>
+/* --NAVBAR-- */
 
-<head>
-<script src="https://s3.amazonaws.com/iantyger.com/Packages/jquery-2.1.1.min.js"></script>
-<script src="app.js"></script>
-<script src="https://s3.amazonaws.com/iwt-web-pack-001/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://s3.amazonaws.com/iwt-web-pack-001/bootstrap.min.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="main.css">
-<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/iantyger.com/Images/favicon+(3).ico">
+.main {
+	position: relative;
+	width: 98%;
+}
 
-</head>
+.mobile{
+	display: none;
+}
 
-	<title>Ian Tyger's Website</title>
+#home {
+	font-size: 56px;
+	margin: -13px 0px 0px 25px;
+	height: 100%;
+	padding: 5px;
+	left: 100px;
+	color: #808080;
+	text-shadow: 1px 2px 2px grey;
 
-<body>
+}
+
+#home:hover {
+	color: white;
+}
+
+.navbar-default {
+	margin: 0px 10px 10px 10px;
+	width: 100%;
 	
-<div class = "main">
-<nav class="navbar navbar-default navbar-inverse" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a title = "Home" id = "home" class="navbar-brand fa fa-home" href="index.html"></a>
-    </div>
+}
 
-    <ul class="nav navbar-nav">
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="explore.html">Explore</a></li>
-        <li class="dropdown">
-          <a href="professional.html" class="dropdown-toggle" data-toggle="">Professional <span class="caret"></span></a>
-          <ul class="dropdown-menu navbar-inverse" role="menu">
+.nav a {
+	font-family:  'Inconsolata', normal;
+	font-size: 28px;
+	padding: 25px;
+}
 
-	    <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="ambition.html">Ambition</a></li>
-            <li class="divider"></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li class="divider"></li>
-            <li><a href="sources.html">About this Site</a></li>
+.navbar-default .navbar-collapse {
+	height:;
+}
 
-          </ul>
-        </li>
-	<li><a href="contact.html"><i class="fa fa-info-circle"></i> Contact</a></li>
-      </ul>
+.navbar .container-fluid {
+	margin: 20px 0px 5px 0px;
+	padding: 0px;
+}
+
+.navbar-right{
+	padding: 0px 25px 0px 0px;
+	margin: -5px 0px 0px -15px;
+}
+
+.dropdown-menu li a{
+	color: white;
+	text shadow: 0px 0px 0px;
+}
+
+.dropdown:hover .dropdown-menu{
+        display: block; /* display the dropdown */
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	margin: 0px 0px 0px 10px;
+	line-height: 30px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	margin: 0px 0px 0px 14px;
+}
+
+/* --CONTENT-- */
+
+.container{
+	margin: auto;
+	width: 100%;
+}
+
+.jumbotron {
+	background: url("https://s3.amazonaws.com/iantyger.com/Images/Newport+Skyline") no-repeat bottom center;
+	background-size: cover;
+	height: 550px;
+	width: 100%;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron .container {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: ;
+	width: 100%;
+}
+
+.jumbotron h1 {
+	color: white;
+	font-size: 96px;
+	text-shadow:5px 5px 10px black;
+}
+
+.jumbotron p {
+	color: white;
+	font-size: 36px;
+	text-shadow:5px 5px 10px black;	
+}
+
+#front-top {
+	color: #777;
+	margin: auto;
+	margin-top: 15px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Inconsolata', normal;
+	font-size: 28px;
+	padding: 10px;
+}
+
+#front-mid {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	font-size: 108px;
+	padding: 10px;
+	text-shadow: 1px 2px 3px grey, 2px 3px 4px silver, 3px 4px 5px black;
+}
+
+#front-mid i:hover {
+	color: #adadad;
+}
+
+#front-mid a{
+	color: inherit;
+}
+
+/* --FOOTER-- */
+
+#footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin: 10px 0px 0px 0px;
+	padding: 5px;
+	font-size: 14px;
+	color: #777;
+	background-color: white;
+	line-height: 30px;
+}
+
+#footer a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#footer .col-xs-6{
+	text-align: center;
+}
+
+/* --UTILITY-- */
+
+#space {
+	height: 150px;
+	clear: both;
+}
 
 
-  </div><!-- /.container-fluid -->
-</nav>
+/* --SCREEN ADJUST-- */
 
-</div>
+@media (max-width: 825px), handheld and (orientation: portrait) {
 
-<div class = "mobile">
-<nav class="navbar navbar-default navbar-inverse" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a title = "Home" id = "home" class="navbar-brand fa fa-home" href="index.html"></a>
-      <a title = "About Me" id = "aboutme" class="fa fa-location-arrow" href="aboutme.html"></a>
-      <a title = "Explore my Interests" id = "explore" class="fa fa-bar-chart" href="explore.html"></a>
-      <a title = "Professional History" id = "professional" class="fa fa-briefcase" href="professional.html"></a>
-      <a title = "Contact Me" id = "contact" class="fa fa-info-circle" href="contact.html"></a>
-    </div>
+	html {
+		min-width: 500px;
+	}
 
-  </div><!-- /.container-fluid -->
-</nav>
-</div>
+	.mobile {
+		position: relative;
+		width: 95%;
+		display: none;
+	}
 
-<div class = "container">
+	.main {
+		display: inline-block;
+		position: relative;
+		width: 95%;
+	}
 
-<div class = "jumbotron"> </div>
+	.navbar-header{
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		
+	}
 
-<div id = "front-top" class = "row">
+	.nav>li {
+		display: inline-block;
+	}
 
-	<div class = "col-xs-4">Where I am.</div>
-	<div class = "col-xs-4">Where I am going.</div>
-	<div class = "col-xs-4">How to contact me.</div>
+	.navbar-inverse .navbar-nav>li>a {
+		text-align: left;
+		font-size: 18px;
+		display: inline;
+	}
+	
 
-</div>
 
-<div id = "front-mid" class = "row">
-
-	<a href="aboutme.html"><i id = "arrow" class = "col-xs-4 fa fa-location-arrow"></i></a>
-	<a href="ambition.html"><i id = "globe" class = "col-xs-4 fa fa-globe"></i></a>
-	<a href="contact.html"><i id = "info" class = "col-xs-4 fa fa-info-circle"></i></a>
-
-</div>
-
-<div id = "footer" class = "row">
-	<div class = "col-xs-2">
-		<a href = "index.html">Home</a>
-	</div>
-
-	<div class = "col-xs-2">
-		<a href = "contact.html">Contact</a>
-	</div>
-
-	<div class = "col-xs-2">
-		<a href = "sources.html">Sources</a>
-	</div>
-
-	<div class = "col-xs-6">Created by Ian Tyger 11/7/2014</div>
-</div>
-</div>
-
-<div id="space"></div>
-
-</body>
-
-</html>
+	.dropdown:hover .dropdown-menu{
+        	display: none;
+	}
+}
