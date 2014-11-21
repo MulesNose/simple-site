@@ -23,21 +23,13 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a id = "home" class="navbar-brand fa fa-home" href="index.html"></a>
+      <a title = "Home" id = "home" class="navbar-brand fa fa-home" href="index.html"></a>
     </div>
 
-    <!-- Collect the nav links and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav">
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="explore.html">Explore</a></li>
-        <li class="dropdown active">
+        <li class="dropdown">
           <a href="professional.html" class="dropdown-toggle" data-toggle="">Professional <span class="caret"></span></a>
           <ul class="dropdown-menu navbar-inverse" role="menu">
 
@@ -51,19 +43,29 @@
 
           </ul>
         </li>
+	<li><a href="contact.html"><i class="fa fa-info-circle"></i> Contact</a></li>
       </ul>
 
-<!-- NAVBAR RIGHT -->
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="blog.html"><i class = "fa fa-comments-o"></i> Blog</a></li>
-        <li><a href="contact.html"><i class="fa fa-envelope-square"></i> Contact</a></li>
-      </ul>
-
-    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
+</div>
+
+<div class = "mobile">
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a title = "Home" id = "home" class="navbar-brand fa fa-home" href="index.html"></a>
+      <a title = "About Me" id = "aboutme" class="fa fa-location-arrow" href="aboutme.html"></a>
+      <a title = "Explore my Interests" id = "explore" class="fa fa-bar-chart" href="explore.html"></a>
+      <a title = "Professional History" id = "professional" class="fa fa-briefcase" href="professional.html"></a>
+      <a title = "Contact Me" id = "contact" class="fa fa-info-circle" href="contact.html"></a>
+    </div>
+
+  </div><!-- /.container-fluid -->
+</nav>
 </div>
 
 <!-- ***CONTENT BEGINS HERE*** -->
