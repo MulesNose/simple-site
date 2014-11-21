@@ -167,7 +167,7 @@
 @media (max-width: 825px), handheld and (orientation: portrait) {
 
 	html {
-		min-width: 500px;
+		min-width: 575px;
 	}
 
 	.mobile {
@@ -182,11 +182,8 @@
 		width: 95%;
 	}
 
-	.navbar-header{
-		width: 100%;
+	.navbar-inverse .navbar-brand{
 		text-align: center;
-		font-size: 14px;
-		
 	}
 
 	.nav>li {
