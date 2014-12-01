@@ -1,5 +1,8 @@
 /* --NAVBAR-- */
-
+html {
+		min-width: 770px;
+	}
+	
 .main {
 	position: relative;
 	width: 98%;
@@ -135,6 +138,7 @@ p{
 /* --FOOTER-- */
 
 #footer {
+	min-width: 770px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
@@ -164,11 +168,6 @@ p{
 /* --SCREEN ADJUST-- */
 
 @media (max-width: 825px), handheld and (orientation: portrait) {
-
-	html {
-		min-width: 770px;
-	}
-
 	.main {
 		display: inline-block;
 		position: relative;

@@ -1,5 +1,8 @@
 /* --NAVBAR-- */
-
+html {
+		min-width: 575px;
+	}
+	
 .main {
 	position: relative;
 	width: 98%;
@@ -163,6 +166,7 @@ p{
 /* --FOOTER-- */
 
 #footer {
+	min-width: 575px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
@@ -192,17 +196,6 @@ p{
 /* --SCREEN ADJUST-- */
 
 @media (max-width: 825px), handheld and (orientation: portrait) {
-
-	html {
-		min-width: 575px;
-	}
-
-	.mobile {
-		position: relative;
-		width: 95%;
-		display: none;
-	}
-
 	.main {
 		display: inline-block;
 		position: relative;
@@ -223,8 +216,6 @@ p{
 		display: inline;
 	}
 	
-
-
 	.dropdown:hover .dropdown-menu{
         	display: none;
 	}
