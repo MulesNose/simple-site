@@ -1,6 +1,6 @@
 /* --NAVBAR-- */
 html {
-		min-width: 575px;
+		min-width: 770px;
 	}
 	
 .main {
@@ -162,11 +162,20 @@ p{
 	position: relative;
 }
 
+.enlarge:hover {
+	transform: scale(1.2,1.2);
+	transform-origin: 0 0;
+}
+
+.enlarge:hover #dataviz2{
+	transform: scale(1.2,1.2);
+	transform-origin: ;
+}
 
 /* --FOOTER-- */
 
 #footer {
-	min-width: 575px;
+	min-width: 770px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
